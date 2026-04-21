@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kỷ Niệm Lớp 12A6</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 350px;
+            height: 450px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .btn {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #e91e63;
+        }
+
+        /* 🌿 HIỆU ỨNG LÁ RƠI */
+        .leaf {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎓 Kỷ Niệm Lớp 12A6 🎓</h1>
+    <p>Thanh xuân của chúng ta - Không bao giờ quay lại</p>
+</header>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#hinhanh">Hình ảnh</a>
+    <a href="#camnghi">Cảm nghĩ</a>
+    <a href="vuichoi 1.html">26/3</a>
+    <a href="bennhau.html">Cùng bên nhau</a>
+    <a href="dangnho11.html">buổi học GDQP đáng nhớ </a>
+</nav>
+
+<section id="gioithieu">
+    <h2>📘 Giới thiệu</h2>
+    <p>Lớp 12A6 - Nơi lưu giữ những kỷ niệm đẹp nhất của tuổi học trò.</p>
+    <p>Chúng ta đã cùng nhau học tập, vui chơi và trưởng thành.</p>
+</section>
+
+<section id="hinhanh">
+    <h2>📸 Hình ảnh kỷ niệm</h2>
+    <div class="gallery">
+        <img src="images/anh 1.jpg">
+        <img src="images/anh 2.jpg">
+        <img src="images/anh 3.jpg">
+    </div>
+</section>
+
+<section id="camnghi">
+    <h2>💌 Cảm nghĩ</h2>
+    <p>“Dù sau này mỗi người một nơi, nhưng 12A6 sẽ mãi trong tim.”</p>
+    <button class="btn" onclick="hienThongBao()">Nhấn vào đây</button>
+</section>
+
+<footer>
+    <p>© 2026 - Lớp 12A6 | Thiết kế bởi nhóm 3❤️</p>
+</footer>
+
+<script>
+function hienThongBao() {
+    alert("Chúc các bạn 12A6 luôn thành công trong tương lai và thành công trên con đường mình chọn!");
+}
+
+// 🌿 TẠO LÁ RƠI
+function taoLa() {
+    const leaf = document.createElement("div");
+    leaf.classList.add("leaf");
+    leaf.innerHTML = "🍂"; // lá khô
+
+    leaf.style.left = Math.random() * 100 + "vw";
+    leaf.style.animationDuration = (4 + Math.random() * 4) + "s";
+    leaf.style.fontSize = (18 + Math.random() * 20) + "px";
+
+    document.body.appendChild(leaf);
+
+    setTimeout(() => {
+        leaf.remove();
+    }, 8000);
+}
+
+setInterval(taoLa, 300);
+</script>
+
+</body>
+</html>
+

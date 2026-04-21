@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tiết học cuối cùng môn GDQP</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+header {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎉 Vui chơi 26/3 - 12A6 🎉</h1>
+</header>
+
+<nav>
+    <a href="index.html">Trang Chính</a>
+    <a href="bennhau.html">Cùng bên nhau</a>
+    <a href="dangnho11.html">Đáng Nhớ</a>
+</nav>
+
+<section>
+    <h2>Khoảnh khắc vui chơi</h2>
+    <p>Ngày hội 26/3 đầy niềm vui và tiếng cười.</p>
+
+    <img width="300px" src="images/anh 4.jpg">
+    <img height="450px" src="images/anh 5.jpg">
+       <img src="images/anh 6.jpg">
+</section>
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+               nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 350px;
+            height: 450px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .btn {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #e91e63;
+        }
+
+        /* 🌿 HIỆU ỨNG LÁ RƠI */
+        .leaf {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+function hienThongBao() {
+    alert("Chúc các bạn 12A6 luôn thành công trong tương lai và thành công trên con đường mình chọn!");
+}
+
+// 🌿 TẠO LÁ RƠI
+function taoLa() {
+    const leaf = document.createElement("div");
+    leaf.classList.add("leaf");
+    leaf.innerHTML = "🍂"; // lá khô
+
+    leaf.style.left = Math.random() * 100 + "vw";
+    leaf.style.animationDuration = (4 + Math.random() * 4) + "s";
+    leaf.style.fontSize = (18 + Math.random() * 20) + "px";
+
+    document.body.appendChild(leaf);
+
+    setTimeout(() => {
+        leaf.remove();
+    }, 8000);
+}
+
+setInterval(taoLa, 300);
+</script>
+<footer>
+    <p>© 2026 - Lớp 12A6 | Thiết kế bởi nhóm 3❤️</p>
+</footer>
+
